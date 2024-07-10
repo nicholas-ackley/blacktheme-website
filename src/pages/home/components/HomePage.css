@@ -1,0 +1,215 @@
+body{
+    background-color: rgb(24,24,24);
+}
+
+.name-title{
+    color: rgb(24,24,24);
+    position: absolute;
+    top: 75x;
+    left: 125px;
+    font-family: "Quando", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+
+}
+.home-biography-container{
+    width: 500px;
+    height: 400px;
+    /* background-color: red; */
+    position: relative;
+    top: 200px;
+    left: 110px;
+    margin: 10px 0px;
+
+}
+.home-circle-container{
+    width: 400px;
+    height: 400px;
+    border-radius:  50%;
+    background-color: blue;
+    position: relative;
+    top: -260px;
+    left: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow:  0 0px 0px rgba(52, 152, 219, 0.5);
+    animation: glow 2s infinite ease-in-out;
+}
+.home-circle-image{
+    position: relative;
+    top: 100px;
+    left: -70px;
+    scale: .8;
+}
+.navbar{
+    display: flex;
+    width: 400px;
+    height: 75px;
+    /* background-color: orange; */
+    position: relative;
+    /* top: -50px; */
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+    left: 1000px;
+    
+}
+.navbar a:hover{
+    animation: bobbleUp 1s;
+
+
+  }
+  .navbar-links a:hover {
+    color: yellow;
+    animation: bobbleUp 1s;
+  }
+.navbar-links li{
+    display: inline;
+}
+.navbar-links a {
+    color: #fff;
+    text-decoration: none; /* Remove underline */
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+  }
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+  }
+  .greeting-title{
+    position: relative;
+    font-weight: 700;
+    font-size: 25px;
+    color: rgb(194, 194, 63);
+    left: 100px;
+    text-align: left;
+    padding:50px 0 0;
+    animation: slideLeft .8s forwards ease;
+  }
+  .name-bio{
+    position: relative;
+    top: -30px;
+    color: white;
+    font-size: 25px;
+    left: 100px;
+    text-align: left;
+    font-weight: 900;
+    animation: slideUp .7s ease;
+
+  }
+
+  .closing-title{
+    position: relative;
+    text-align: left;
+    color: white  ;
+    top: -120px;
+    left: 100px;
+    font-size: 19px;
+    font-weight: 600;
+    animation: slideRight .8s forwards ease;
+  }
+  .type-writer{
+    color: white;
+    position: relative;
+    text-align: left;
+    left: 50px;
+    top: -80px;
+    animation: revealContainer 1s ease-in-out;
+    
+  }
+.testing{
+    width: 400px;
+    height: 200px;
+    background-color: blue;
+    position: relative;
+}
+.header-scroll-button{
+    position: relative;
+    top: 1000px;
+}
+
+
+
+/* NAME ANIMATION */
+.scramble-text {
+  color: #dae90b; /* Default color */
+  position: absolute; /* Default position */
+  top: 35px;
+  left: 100px;
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  font-size: 20px;
+  font-family: "Quando", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.scramble-text:hover {
+  color: #178dc4; /* Hover color */
+  transform: scale(1.1); /* Scale on hover */
+}
+
+  @keyframes slideLeft{
+        from{
+            transform: translateX(90%);
+        }
+        to{
+            transform: translateX(1%);
+
+        }
+
+  }
+  @keyframes slideRight{
+    from{
+        transform: translateX(-90%);
+    }
+    to{
+        transform: translateX(1%);
+
+    }
+
+}
+  @keyframes slideUp{
+    from{
+        transform: translateY(150%);
+    }
+    to{
+        transform: translateY(0%);
+
+    }
+  }
+  @keyframes revealContainer {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 100%;
+        }
+    
+  }
+
+  @keyframes glow {
+    0% {
+        box-shadow: 0 0 5px 5px rgba(52, 152, 219, 1);
+      }
+      50% {
+        box-shadow: 0 0 10px 5px rgba(52, 152, 219, 1);
+      }
+      100% {
+        box-shadow: 0 0 15px 5px rgba(52, 152, 219, 1);
+      }
+    }
+    @keyframes bobbleUp {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-10px);
+      }
+      60% {
+        transform: translateY(-5px);
+      }
+    }
